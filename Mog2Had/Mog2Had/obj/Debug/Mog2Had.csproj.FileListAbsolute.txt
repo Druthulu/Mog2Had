@@ -12,3 +12,7 @@ D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.pdb
 D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.ApplyForm.resources
 D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.CreateForm.resources
 D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.HelpForm.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.VerifyForm.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\bin\Debug\Newtonsoft.Json.dll
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\bin\Debug\Newtonsoft.Json.xml
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.csproj.CopyComplete

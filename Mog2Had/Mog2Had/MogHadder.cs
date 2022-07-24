@@ -37,7 +37,8 @@ namespace Mog2Had
 
         private void verifyPatchButton_Click(object sender, EventArgs e)
         {
-
+            VerifyForm form = new VerifyForm();
+            form.Show();
         }
     }
 }

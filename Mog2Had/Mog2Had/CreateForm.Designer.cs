@@ -51,7 +51,7 @@
             this.newButton.Name = "newButton";
             this.newButton.Size = new System.Drawing.Size(75, 39);
             this.newButton.TabIndex = 10;
-            this.newButton.Text = "New File";
+            this.newButton.Text = "Diff File";
             this.newButton.UseVisualStyleBackColor = true;
             this.newButton.Click += new System.EventHandler(this.newButton_Click);
             // 

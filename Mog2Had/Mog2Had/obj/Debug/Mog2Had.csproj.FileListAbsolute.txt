@@ -1,0 +1,14 @@
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\bin\Debug\Mog2Had.exe.config
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\bin\Debug\Mog2Had.exe
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\bin\Debug\Mog2Had.pdb
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.csproj.AssemblyReference.cache
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.csproj.SuggestedBindingRedirects.cache
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.MogHadder.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.Properties.Resources.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.csproj.GenerateResource.cache
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.csproj.CoreCompileInputs.cache
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.exe
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.pdb
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.ApplyForm.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.CreateForm.resources
+D:\git\Druthulu\Mog2Had\Mog2Had\Mog2Had\obj\Debug\Mog2Had.HelpForm.resources

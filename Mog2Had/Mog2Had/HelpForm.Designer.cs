@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.helpTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
+            // 
+            // helpTextBox
+            // 
+            this.helpTextBox.Location = new System.Drawing.Point(12, 12);
+            this.helpTextBox.Name = "helpTextBox";
+            this.helpTextBox.Size = new System.Drawing.Size(205, 152);
+            this.helpTextBox.TabIndex = 0;
+            this.helpTextBox.Text = "";
+            this.helpTextBox.TextChanged += new System.EventHandler(this.helpTextBox_TextChanged);
             // 
             // HelpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(229, 176);
+            this.Controls.Add(this.helpTextBox);
             this.Name = "HelpForm";
             this.Text = "Help";
             this.ResumeLayout(false);
@@ -42,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.RichTextBox helpTextBox;
     }
 }

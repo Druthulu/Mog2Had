@@ -15,6 +15,17 @@ namespace Mog2Had
         public HelpForm()
         {
             InitializeComponent();
+            fillText();
+        }
+
+        private void helpTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        void fillText()
+        {
+            helpTextBox.Text = "Built by Druthulu 2022. \n Patching to save search work";
         }
     }
 }

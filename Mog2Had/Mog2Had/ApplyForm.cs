@@ -16,5 +16,20 @@ namespace Mog2Had
         {
             InitializeComponent();
         }
+
+        private void sourceButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void patchButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void applyPatchButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

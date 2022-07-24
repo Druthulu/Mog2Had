@@ -27,47 +27,66 @@ namespace Mog2Had
 
             //  READ INPUT FILE INTO STRING PASS TO DESERIALIZE
 
+
+            //SERIALIZE
+
+            //string json = File.ReadAllText(patchTextBox.Text).ToString();
+
+            //var DeserializedFromJSON = new M2HPatch("test");
+            //byte[] data = new byte[] { 0, 1, 2, 3, 4 };
+            //DeserializedFromJSON.dataPoints.Add(new ObjectData(12345, 5, "replace", data));
+            //string SerializedJson = JsonConvert.SerializeObject(DeserializedFromJSON, Formatting.Indented);
+            //File.WriteAllText(patchTextBox.Text, SerializedJson);
+
             //  DeSerial
-            string json = File.ReadAllText(patchTextBox.Text)?.ToString();
-            if (json.Length > 0)
+
+            //  READ FILE
+            string json = File.ReadAllText(patchTextBox.Text).ToString();
+            if (json.Length > 8)    //  Check if long enough for next check
             {
-                //string json = File.ReadAllText(patchTextBox.Text)?.ToString();
-                try
+                if (json.Substring(6, 3) == "m2H")  //  Check for valid info
                 {
-                    M2HPatch DeserializedFromJSON = JsonConvert.DeserializeObject<M2HPatch>(json);
-                    //  Verify Data
+                    //  Deserialize
+                    var DeserializedFromJSON = JsonConvert.DeserializeObject<M2HPatch>(json);
                     for (int i = 0; i < DeserializedFromJSON.dataPoints.Count; i++)
                     {
-                        bool hash = DeserializedFromJSON.sourceMD5 != "";
+
+                        //var DeserializedFromJSON = JsonConvert.DeserializeObject<M2HPatch>(json);
+                        //  Verify Data
+                        bool hash = DeserializedFromJSON.sourceMD5 != null;
                         bool dpsa = DeserializedFromJSON.dataPoints[i].startAddress > -1;
-                        bool dpl = DeserializedFromJSON.dataPoints[i].length > -1;
-                        bool dpt = DeserializedFromJSON.dataPoints[i].type != "";
-                        bool dpd = DeserializedFromJSON.dataPoints[i].data.Length > 0;
-                        if (!hash | !dpsa | !dpl | !dpt | !dpd)
+                        bool dpl = DeserializedFromJSON.dataPoints[i].length != 0;
+                        bool dpt = DeserializedFromJSON.dataPoints[i].type != null;
+                        bool dpd = DeserializedFromJSON.dataPoints[i].data != null;
+                        if (hash & dpsa & dpl & dpt & dpd)
                         {
-                            break;
-                            //  Message no good
+                            //  SHOULD BE VALID JSON FORMAT, DATA, and info
+
+                            //  CONTINUE WORK
+                            /*
+                            verifyRTF.Text += DeserializedFromJSON.sourceMD5 + "\n" +
+                                DeserializedFromJSON.dataPoints[i].startAddress + "\n" +
+                                DeserializedFromJSON.dataPoints.Count + "\n" +
+                                DeserializedFromJSON.dataPoints[i].type + "\n";
+                            for (int j = 0; j < DeserializedFromJSON.dataPoints[i].data.Length; j++)
+                            {
+                                verifyRTF.Text += DeserializedFromJSON.dataPoints[i].data[j] + ",";
+                            }
+                            */
+
+                            //  Success, notify
+
                         }
                         else
                         {
-                            //  Success, notify
+                            //  Message no good
+                            verifyRTF.Text = "bunk";
+                            break;
                         }
+
                     }
                 }
-                catch (NullReferenceException)
-                {
-
-                    //throw;
-                }
-                //M2HPatch DeserializedFromJSON = JsonConvert.DeserializeObject<M2HPatch>(json);
-                //  This should read from the patch file path, and create a class based on the data found.
-
-                
-            
-
-            
             }
-
 
         }
 
